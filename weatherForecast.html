@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Weather Forecast</title>
+    <style>
+        body {
+            /* font-family: sans-serif; */
+            font-family: 'Montserrat', cursive;
+            background: linear-gradient(to right, #83a4d4, #b6fbff);
+            padding: 30px;
+            color: #333;
+        }
+        .weather-wrapper{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* display: flex;
+            flex-direction: row;
+            justify-content: space-between; */
+
+        }
+        .weather-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            /* height: 300px; */
+            /* max-width: 300px; */
+            width: 400px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .weather-card:hover{
+            transform: translateY(-5px);
+        }
+        .temperature {
+            font-size: 48px;
+            font-weight: bold;
+        }
+        .condition {
+            font-size: 20px;
+            color: #666;
+        }
+        .forecast {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+        .day {
+            flex: 1;
+        }
+        .day h4 {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="weather-wrapper">
+        <div class="weather-card">
+            <h2>New Delhi</h2>
+            <div class="temperature">32°C ☀️</div>
+            <div class="condition">Sunny</div>
+            <div class="forecast">
+                <div class="day">
+                    <h4>Monday</h4>
+                    <p>32°C</p>
+                </div>
+                <div class="day">
+                    <h4>Tuesday</h4>
+                    <p>33°C</p>
+                </div>
+                <div class="day">
+                    <h4>Wednesday</h4>
+                    <p>28°C</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="weather-card">
+            <h2>Lucknow</h2>
+            <div class="temperature">22°C 🌥️</div>
+            <div class="condition">Partly Cloudy</div>
+            <div class="forecast">
+                <div class="day">
+                    <h4>Monday</h4>
+                    <p>22°C</p>
+                </div>
+                <div class="day">
+                    <h4>Tuesday</h4>
+                    <p>23°C</p>
+                </div>
+                <div class="day">
+                    <h4>Wednesday</h4>
+                    <p>18°C</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="weather-card">
+            <h2>Kolkata</h2>
+            <div class="temperature">20°C 🌧️</div>
+            <div class="condition">Rainy</div>
+            <div class="forecast">
+                <div class="day">
+                    <h4>Monday</h4>
+                    <p>21°C</p>
+                </div>
+                <div class="day">
+                    <h4>Tuesday</h4>
+                    <p>20°C</p>
+                </div>
+                <div class="day">
+                    <h4>Wednesday</h4>
+                    <p>18°C</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather-card">
+            <h2>Mumbai</h2>
+            <div class="temperature">20°C 🌧️</div>
+            <div class="condition">Rainy</div>
+            <div class="forecast">
+                <div class="day">
+                    <h4>Monday</h4>
+                    <p>21°C</p>
+                </div>
+                <div class="day">
+                    <h4>Tuesday</h4>
+                    <p>20°C</p>
+                </div>
+                <div class="day">
+                    <h4>Wednesday</h4>
+                    <p>18°C</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather-card">
+            <h2>Pune</h2>
+            <div class="temperature">22°C 🌥️</div>
+            <div class="condition">Partly Cloudy</div>
+            <div class="forecast">
+                <div class="day">
+                    <h4>Monday</h4>
+                    <p>22°C</p>
+                </div>
+                <div class="day">
+                    <h4>Tuesday</h4>
+                    <p>23°C</p>
+                </div>
+                <div class="day">
+                    <h4>Wednesday</h4>
+                    <p>18°C</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather-card">
+            <h2>Bangalore</h2>
+            <div class="temperature">20°C 🌧️</div>
+            <div class="condition">Rainy</div>
+            <div class="forecast">
+                <div class="day">
+                    <h4>Monday</h4>
+                    <p>21°C</p>
+                </div>
+                <div class="day">
+                    <h4>Tuesday</h4>
+                    <p>20°C</p>
+                </div>
+                <div class="day">
+                    <h4>Wednesday</h4>
+                    <p>18°C</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>To-Do List</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+    
+        body {
+          /* font-family: 'Segoe UI', sans-serif; */
+          font-family: 'Poppins', cursive;
+          background: #f0f2f5;
+          display: flex;
+          justify-content: center;
+          padding: 50px;
+          background: #555;
+          /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
+        }
+    
+        .todo-app {
+          margin: 2.5%;
+          background: #fff;
+          padding: 30px;
+          border-radius: 12px;
+          width: 100%;
+          max-width: 400px;
+          box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+    
+        .todo-app h2 {
+          text-align: center;
+          margin-bottom: 20px;
+          color: #333;
+        }
+    
+        .task-input {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 20px;
+        }
+    
+        .task-input input[type="text"] {
+          flex: 1;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+          font-size: 14px;
+        }
+    
+        .task-input input[type="submit"] {
+          background: #007bff;
+          color: white;
+          border: none;
+          padding: 10px 16px;
+          border-radius: 6px;
+          /* cursor: not-allowed; Disabled as no JS */
+        }
+    
+        ul {
+          list-style: none;
+          padding: 0;
+        }
+    
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 12px;
+          border: 1px solid #eee;
+          border-radius: 6px;
+          margin-bottom: 10px;
+          background: linear-gradient(to right, #b6fbff ,#83a4d4);
+        }
+    
+        li label {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 15px;
+        }
+    
+        input[type="checkbox"] {
+          width: 18px;
+          height: 18px;
+          accent-color: yellowgreen;
+        }
+    
+        li.done label {
+          color: #999;
+          text-decoration: line-through;
+        }
+    
+        .tag {
+          background: #e0e0e0;
+          padding: 2px 8px;
+          font-size: 12px;
+          border-radius: 12px;
+          color: #555;
+        }
+      </style>
+</head>
+<body>
+    <div class="todo-app">
+        <h2>To-do List</h2>
+
+        <div class="task-input">
+            <input type="text" placeholder="Add new task..." >
+            <input type="submit" value="Add">
+        </div>
+
+        <ul>
+            <li>
+                <label>
+                    <input type="checkbox" id="check">
+                    <span id="task">Complete HTML Projects</span>
+                </label>
+                <span class="tag">Work</span>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" id="check">
+                    <span id="task">Grocery Shopping</span>
+                </label>
+                <span class="tag">Personal</span>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" id="check">
+                    <span id="task">Walk the Dog </span>
+                </label>
+                <span class="tag">Home</span>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" id="check">
+                    <span id="task">Water Plants</span>
+                </label>
+                <span class="tag">Daily</span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
