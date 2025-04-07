@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Step Form</title>
+    <style>
+         .form-step {
+            display: none;
+            border: 1px solid #ccc;
+            padding: 2em;
+            margin-top: 1em;
+            background: #f9f9f9;
+        }
+
+        /* Show step1 when #step1 is checked */
+        #step1:checked ~ .step1,
+        #step2:checked ~ .step2,
+        #step3:checked ~ .step3,
+        #step4:checked ~ .step4 {
+            display: block;
+        }
+
+        label {
+            display: inline-block;
+            margin-top: 1em;
+            padding: 0.5em 1em;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <!-- Hidden Radio Buttons -->
+        <input type="radio" name="step" id="step1" checked>
+        <input type="radio" name="step" id="step2">
+        <input type="radio" name="step" id="step3">
+        <input type="radio" name="step" id="step4">
+      
+        <!-- Step 1 -->
+        <div class="form-step step1">
+          <h2>Step 1</h2>
+          <p><strong>Enter basic info:</strong></p>
+          First Name:<input type="text" for="name" id="firstName">
+          <br><br>
+          Last Name:<input type="text" for="name" id="lastName">
+          <br>
+          <label for="step2">Next</label>
+        </div>
+      
+        <!-- Step 2 -->
+        <div class="form-step step2">
+          <h2>Step 2</h2>
+          <p><strong>More Details</strong></p>
+          Email:<input type="email" for="email" id="email">
+          <br><br>
+          Phone Number:<input type="text" for="phoneNumber" id="phoneNumber">
+          <br>
+          <label for="step3">Next</label>
+        </div>
+      
+        <!-- Step 3 -->
+        <div class="form-step step3">
+          <h2>Step 3</h2>
+          <p><strong>Dob Details</strong></p>
+          <input type="date" name="date" id="date"> Date
+          <br>
+          <label for="step4">Next</label>
+        </div>
+      
+        <!-- Step 4 -->
+        <div class="form-step step4">
+          <h2>Step 4</h2>
+          <p><strong>Confirm and Submit</strong></p>
+          <input type="checkbox" name="I Confirm" id="confirm"> I Confirm.
+          <br>
+          <label for="step1">Start Over</label>
+        </div>
+      </form>
+</body>
+</html>
