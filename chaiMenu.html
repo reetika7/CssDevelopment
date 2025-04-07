@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Menu</title>
+    <style>
+        body {background: black; font-family:'Times New Roman', Times, serif; color: white; }
+        .chaiGrid{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 1em;}
+        img { width: 100%; border-radius: 8px; transition: transform 0.3s ease;}
+        img:hover { transform: translateY(-5px);}
+        button { margin-top: 0.5em; padding: 0.5em 1em; border: none; background:rgb(108, 19, 19); color: white; border-radius: 5px; cursor: pointer; }
+        h1,h3 {text-align: center;}
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to Chai Gupsap Area</h1>
+    <h3>Order your Fav Chai ☕</h3>
+    <div class="chaiGrid">
+        <div>
+            <img src="gingerChai.jpg" alt="ginger tea">
+            <h4>Ginger Tea</h4>
+            <p>It is a herbal beverage made by steeping fresh or dried ginger root in hot water, known for its warming.</p>
+            <button>Select</button>
+        </div>
+        <div>
+            <img src="masalaChai.jpg" alt="masala tea">
+            <h4>Masala Tea</h4>
+            <p>It is a popular Indian spiced beverage made by brewing black tea with a blend of cardamom, ginger, cinnamon, cloves with milk and sugar added.</p>
+            <button>Select</button>
+        </div>
+        <div>
+            <img src="lemonChai.jpg" alt="lemon tea">
+            <h4>Lemon Tea</h4>
+            <p>It is a popular beverage made by adding lemon juice or slices to brewed tea, often enjoyed for its refreshing flavor and potential health benefits.</p>
+            <button>Select</button>
+        </div>
+    </div>
+</body>
+</html>
