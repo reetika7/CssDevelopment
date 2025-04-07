@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+<body>
+  <style>
+    body { font-family: sans-serif; padding: 2em; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1em; }
+    img { width: 100%; border-radius: 8px; transition: transform 0.3s ease;}
+    img:hover { transform: translateY(-5px);}
+  </style>
+
+  <h1>Photo Gallery</h1>
+  <div class="grid">
+    <img src="himachal.jpg" alt="">
+    <img src="himachal.jpg" alt="">
+    <img src="himachal.jpg" alt="">
+  </div>
+
+</body>
+</html>
