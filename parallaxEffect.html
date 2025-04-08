@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Effect</title>
+    <style>
+        body, html {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          font-family: sans-serif;
+          scroll-behavior: smooth;
+        }
+    
+        .parallax-section {
+          height: 100vh;
+          background-image: url('waterfall.jpg');
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .content-section {
+          height: 100vh;
+          background-image: url('island.jpg');
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .parallax-section1 {
+          height: 100vh;
+          background-image: url('mountain.jpg');
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+    
+        .content-section1 {
+          height: 100vh;
+          background-image: url('mount-fuji.jpg');
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      </style>
+    </head>
+    <body>
+    
+      <div class="parallax-section"></div>
+    
+      <div class="content-section">
+        <!-- <img src="himachal.jpg" alt="">
+        <p>Scroll down for parallax</p> -->
+      </div>
+    
+      <div class="parallax-section1"></div>
+    
+      <div class="content-section1">
+        <!-- <img src="goa.jpg" alt="">
+        <p>More content here</p> -->
+      </div>
+    
+    </body>
+</html>
