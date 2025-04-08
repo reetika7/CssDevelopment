@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Accordion + Dropdown</title>
+    <style>
+        body {
+          font-family: 'Poppins', cursive;
+          margin: 40px;
+        }
+        
+        .wrapper{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          /* gap: 1em; */
+        } 
+
+        /* Accordion styles */
+        .accordion input {
+          display: none;
+        }
+    
+        .accordion label {
+          width: 450px;
+          display: block;
+          background: #7460ee;
+          color: white;
+          padding: 10px;
+          cursor: pointer;
+          margin-bottom: 5px;
+          border-radius: 5px;
+        }
+    
+        .accordion .content {
+          width: 450px;
+          max-height: 0;
+          overflow: hidden;
+          border-radius: 5px;
+          transition: max-height 0.3s ease;
+          background: #f1f1f1;
+          padding: 0 10px;
+        }
+    
+        .accordion input:checked + label + .content {
+          max-height: 400px;
+          padding: 10px;
+        }
+    
+        /* Dropdown styles */
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+    
+        .dropdown input {
+          display: none;
+        }
+    
+        .dropdown label {
+          background: #28a745;
+          color: white;
+          padding: 10px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+    
+        .dropdown .menu {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          border: 1px solid #ccc;
+          min-width: 140px;
+          z-index: 1;
+          border-radius: 5px;
+          margin-top: 5px;
+        }
+    
+        .dropdown .menu a {
+          padding: 10px;
+          display: block;
+          color: black;
+          text-decoration: none;
+        }
+    
+        .dropdown .menu a:hover {
+          border-radius: 5px;
+          background-color: #bfec90;
+        }
+    
+        .dropdown input:checked + label + .menu {
+          display: block;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="wrapper">
+        <div class="accordion">
+          <h2>Accordion</h2>
+          <input type="checkbox" id="acc1">
+          <label for="acc1">Section 1</label>
+          <div class="content">
+            <p>This is the content for section 1.</p>
+          </div>
+      
+          <input type="checkbox" id="acc2">
+          <label for="acc2">Section 2</label>
+          <div class="content">
+            <p>This is the content for section 2.</p>
+          </div>
+
+          <input type="checkbox" id="acc3">
+          <label for="acc3">Section 3</label>
+          <div class="content">
+            <p>This is the content for Section 3.</p>
+          </div>
+        </div>
+      
+        <div class="dropdown">
+          <h2>Dropdown</h2>
+          <input type="checkbox" id="drop1">
+          <label for="drop1">Select Option</label>
+          <div class="menu">
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
