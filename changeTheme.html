@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Change Theme</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+    
+        body {
+          font-family: 'Poppins', cursive;
+        }
+
+        label{
+            border-radius: 10px;
+            background: linear-gradient(-135deg, #60d7ea, #4158d0);
+            color: white;
+            padding: 5px 10px;
+        }
+
+        .wrapper{
+            min-height: 100vh;
+            color: black ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #toggle{
+            display: none;
+        }
+
+        #label-toggle::before{
+            content: "Change Theme";
+        }
+
+        #toggle:checked ~.wrapper{
+            background: linear-gradient(-135deg, #c850c0, #4158d0);
+            color: white;
+            
+        }
+
+        #toggle:checked ~.wrapper #label-toggle{
+            background: linear-gradient(230deg, #2ecc71, #145A32);
+            color: white;
+        }
+
+        #toggle:checked ~.wrapper #label-toggle::before{
+            content: "Revert Theme";
+        }
+
+
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="toggle">
+    <div class="wrapper">
+        <h1 id="heading">Hello World</h1>
+        <p id="paragraph">Toggle with css and html only.</p>
+        <br>
+        <label for="toggle" id="label-toggle"></label>
+    </div>
+</body>
+</html>
